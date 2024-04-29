@@ -47,7 +47,13 @@ function func() {
  * 하지만 let / const는 변수 초기에 어떤 값도 할당되지 않는다.
  *
  * 값이 할당되기 전에 콘솔로 출력하면 에러가 발생한다.
+ *
+ * 이러한 일이 발생하는 이유를 TDZ (Temporal Dead Zone) 이라고 한다.
+ * 일시적 데드 존은 변수를 사용할 수 없는 일시적인 비활성 상태를 나타낸다.
  */
 
 console.log(greeting2);
 const greeting2 = 'hello';
+
+// 변수를 생성할 때 재할당이 필요없다면 const를 사용
+// 재할당이 필요하면 let을 사용하지만 변수의 scpoe를 최대한 좁게 만들어서 사용해주는걸 권장
