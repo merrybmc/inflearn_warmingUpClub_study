@@ -45,4 +45,5 @@ const newElement = document.createElement('span');
 
 newElement.textContent = 'Hello';
 
+// 요소 수정하기
 list.parentNode.replaceChild(newElement, list);
