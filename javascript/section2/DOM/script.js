@@ -16,8 +16,34 @@
 // document를 이용하여 DOM 구조에 접근하거나 원하는 요소를 조작 가능
 
 // 기본 최상위 메서드
-window.document;
+val = window.document; // 객체를 트리 구조로 표현
 
-/**
- *
- */
+val = document.baseURI; // 웹페이지의 URL 반환
+val = document.head; // <head> 태그 반환
+val = document.body; // <body> 태그 반환
+val = document.forms; // <form> 태그 반환
+val = document.forms[0].id; // 제일 앞 form 태그의 id 속성값 반환
+
+// 태그 접근
+
+// id
+const headerContainer = document.getElementById('header');
+
+// class
+const footerContainer = document.querySelector('footer');
+
+// 해당 태그를 가진 모든 요소 반환
+const getAllTag = document.getElementsByTagName('div');
+
+// 해당 클래스 이름을 가진 모든 태그 반환
+const getAllClass = document.getElementsByClassName('hello');
+const getAllClass2 = document.querySelectorAll('hello');
+
+// 스타일 조작
+headerContainer.style.display = 'none';
+
+// 컨텐츠 조작
+headerContainer.textContent = 'Text Content';
+
+headerContainer.innerText = 'Inner Text';
+headerContainer.innerHTML = '<span>Inner HTML</span>';
