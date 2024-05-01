@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.head-btn {
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 8px 10px;
+  background: white;
+
+  cursor: pointer;
+}
+
+.head-btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.img {
+  width: 200px;
+  height: 230px;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.none {
+  display: none;
+}

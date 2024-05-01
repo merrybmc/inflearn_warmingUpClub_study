@@ -36,4 +36,5 @@ let observer = new IntersectionObserver(
   // threshold 0.1로 설정하면 타겟 요소의 10%가 루트 요소와 겹치면 콜백 실행
 );
 
+// list의 끝부분을 알려주는 p 타겟 요소를 관찰
 observer.observe(document.querySelector('.end'));
