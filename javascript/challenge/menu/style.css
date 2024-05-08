@@ -5,8 +5,10 @@ body {
 
 .header {
   display: flex;
+  gap: 30px;
   justify-content: center;
   padding-bottom: 50px;
+  list-style: none;
 }
 
 .head-btn {
