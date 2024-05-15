@@ -34,4 +34,4 @@ const createBook = (title, author, isbn) => ({
 const book4 = createBook('harry', 'jk', 'ab123');
 const book5 = createBook('potter', 'rowling', 'ab456');
 
-//
+// 동일한 코드를 계속 반복할 필요없이 동일한 속성을 공유하는 여러 객체를 만들 때 유용
